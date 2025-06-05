@@ -71,6 +71,90 @@ nav a:hover {
   color: #333;
   text-align: center;
   padding: 6em 0;
+  position: relative;
+}
+
+.hero-model {
+  margin-top: 2em;
+  perspective: 800px;
+}
+
+.house-3d {
+  --size: 120px;
+  width: var(--size);
+  height: calc(var(--size) + 40px);
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  cursor: grab;
+}
+
+.house-3d.grabbing {
+  cursor: grabbing;
+}
+
+.house-3d .cube {
+  position: absolute;
+  top: 40px;
+  width: var(--size);
+  height: var(--size);
+  transform-style: preserve-3d;
+}
+
+.house-3d .side {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  background: #fafafa;
+  border: 1px solid #ccc;
+}
+
+.house-3d .front {
+  transform: rotateY(0deg) translateZ(calc(var(--size) / 2));
+}
+
+.house-3d .back {
+  transform: rotateY(180deg) translateZ(calc(var(--size) / 2));
+}
+
+.house-3d .left {
+  transform: rotateY(-90deg) translateZ(calc(var(--size) / 2));
+}
+
+.house-3d .right {
+  transform: rotateY(90deg) translateZ(calc(var(--size) / 2));
+}
+
+.house-3d .top {
+  transform: rotateX(90deg) translateZ(calc(var(--size) / 2));
+  background: #e0e0e0;
+}
+
+.house-3d .bottom {
+  transform: rotateX(-90deg) translateZ(calc(var(--size) / 2));
+}
+
+.house-3d .roof {
+  position: absolute;
+  width: var(--size);
+  height: 40px;
+  transform-style: preserve-3d;
+  transform: translateZ(var(--size));
+}
+
+.roof-side {
+  position: absolute;
+  width: var(--size);
+  height: 40px;
+  background: #d66;
+  transform-origin: bottom;
+}
+
+.roof-front {
+  transform: rotateX(45deg);
+}
+
+.roof-back {
+  transform: rotateX(-45deg);
 }
 
 .hero-content h2 {
