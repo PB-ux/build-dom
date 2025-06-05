@@ -1,11 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отделка домов</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">DreamFinish</h1>
+        <nav id="nav">
+          <a href="#about">О нас</a>
+          <a href="#services">Услуги</a>
+          <a href="#gallery">Галерея</a>
+          <a href="#contact">Контакты</a>
+          <button id="navToggle" class="nav-toggle">&#9776;</button>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero">
+      <div class="hero-content">
+        <h2>Преобразим ваш дом</h2>
+        <p>Профессиональная внутренняя и внешняя отделка домов</p>
+        <a href="#services" class="btn">Наши услуги</a>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <h2>О компании</h2>
+      <p>
+        Наша команда занимается комплексной отделкой домов: от штукатурных работ
+        до дизайна интерьера.
+      </p>
+    </section>
+
+    <section id="services" class="container">
+      <h2>Услуги</h2>
+      <div class="services-list">
+        <div class="service">
+          <h3>Фасадные работы</h3>
+          <p>Внешняя отделка, утепление, покраска.</p>
+        </div>
+        <div class="service">
+          <h3>Внутренняя отделка</h3>
+          <p>Штукатурка, плитка, обои.</p>
+        </div>
+        <div class="service">
+          <h3>Дизайн-проект</h3>
+          <p>Создание индивидуального интерьера.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="container">
+      <h2>Галерея</h2>
+      <div class="gallery-grid">
+        <img src="https://picsum.photos/300/200?random=1" alt="Пример работы" />
+        <img src="https://picsum.photos/300/200?random=2" alt="Пример работы" />
+        <img src="https://picsum.photos/300/200?random=3" alt="Пример работы" />
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Связаться с нами</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Имя" required />
+        <input type="email" placeholder="E-mail" required />
+        <textarea placeholder="Сообщение"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 DreamFinish</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
