@@ -65,13 +65,20 @@
 
     <section id="contact" class="container">
       <h2>Связаться с нами</h2>
-      <form id="contactForm">
-        <input type="text" placeholder="Имя" required />
-        <input type="email" placeholder="E-mail" required />
-        <textarea placeholder="Сообщение"></textarea>
-        <button type="submit">Отправить</button>
-      </form>
+      <button id="openModal" class="btn">Оставить сообщение</button>
     </section>
+
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <button id="closeModal" class="close">&times;</button>
+        <form id="contactForm">
+          <input type="text" placeholder="Имя" required />
+          <input type="email" placeholder="E-mail" required />
+          <textarea placeholder="Сообщение"></textarea>
+          <button type="submit" class="btn">Отправить</button>
+        </form>
+      </div>
+    </div>
 
     <footer>
       <div class="container">
